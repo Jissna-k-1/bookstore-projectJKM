@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { FaEdit } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
+import { FaPen } from 'react-icons/fa'
+
 
 function Edit() {
   const [offcanvasStatus, setOffcanvasStatus] = useState(false)
@@ -26,6 +28,9 @@ function Edit() {
               <input type="file" id='uploading' hidden/>
               <img style={{width:'150px', height:'150px', borderRadius:'50%'}} src="https://slw-comicverse.dslw.unibas.ch/img/members/loricourt.png" alt="profile" />
             </label>
+             {/* edit symbol */}
+            <button style={{height:'30px', width:"30px",borderRadius:'50%', marginTop:'-19px'}} className='bg-yellow-300 p-2 text-white rounded ' ><FaPen/></button>
+            
             {/* name */}
             <div className="mt-10 mb-3 w-full px-5">
               <input type="text" placeholder='Username' className='border border-gray-200 p-2 rounded w-full' />
